@@ -11,7 +11,7 @@ st.set_page_config(
 # ======
 
 image = Image.open('monegros.jpg')
-st.image(image, width=500)
+st.image(image, width=800)
 
 st.title('Desertificación en Aragón')
 st.subheader('AI Saturdays - I Edición Zaragoza - CURSO BÁSICO DE IA')
