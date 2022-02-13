@@ -12,7 +12,7 @@ st.set_page_config(
 
 st.title('Desertificación en Aragón')
 st.subheader('AI Saturdays - I Edición Zaragoza - CURSO BÁSICO DE IA')
-st.markdown('''### Descripción del problema''')
+st.markdown('''#### Descripción del problema''')
 st.markdown('''
 La desertificación se produce por la degradación de la tierra que se da en zonas secas: áridas, semiáridas y \
 subhúmedas secas. La actividad humana y las variaciones climáticas están entre las causas de esta degradación del \
@@ -28,7 +28,7 @@ Para poder identificar estas zonas se propone un proceso que gestione el reconoc
 desertificación en Aragón con el objetivo de aplicar políticas más eficientes referentes a la reforestación de las \
 zonas afectadas, y nuevos tratamientos de cultivos.
 ''')
-st.markdown('''### Descripción del problema''')
+st.markdown('''#### Objetivo de la aplicación''')
 st.markdown('''
 El objetivo de la aplicación en una primera instancia pasa por, dada una imagen de la zona recogida de satelite poder \
 comparar la evolucion en el tiempo con respecto a la desertificación *y en una segunda instancia poder \
