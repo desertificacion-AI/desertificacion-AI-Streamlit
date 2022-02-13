@@ -60,3 +60,13 @@ try:
     st.image(image, width=800)
 except:
     pass
+
+# Créditos
+with st.expander('Créditos'):
+    st.markdown("""
+        * Pedro Biel
+        * Yinet Castiblanco
+        * Eva de Miguel
+        
+        * **Código fuente:** [GitHub](https://github.com/desertificacion-AI/desertificacion-AI).
+    """)
