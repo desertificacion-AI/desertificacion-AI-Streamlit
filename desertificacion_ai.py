@@ -10,6 +10,9 @@ st.set_page_config(
 # Título
 # ======
 
+image = Image.open('monegros.jpg')
+st.image(image, width=500)
+
 st.title('Desertificación en Aragón')
 st.subheader('AI Saturdays - I Edición Zaragoza - CURSO BÁSICO DE IA')
 st.markdown('''#### Descripción del problema''')
@@ -55,10 +58,11 @@ st.image(image, width=800)
 # Librerías
 # =========
 
+st.markdown('---')
 with st.expander('Librerías'):
     st.markdown("""
-        PIL
-        streamlit
+        * PIL
+        * streamlit
         ...
     """)
 
