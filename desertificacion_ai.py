@@ -39,7 +39,7 @@ desarrollar un modelo que regrese la probabilidad de desertizacion en un area da
 # =============
 
 st.sidebar.header('Banda lateral')
-st.text('Aquí se pueden poner algunos widgets')
+st.sidebar.text('Aquí se pueden poner algunos widgets')
 
 # Imagen
 # ======
