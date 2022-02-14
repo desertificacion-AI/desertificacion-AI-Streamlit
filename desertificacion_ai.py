@@ -10,7 +10,7 @@ st.set_page_config(
 # Título
 # ======
 
-image = Image.open('monegros.jpg')
+image = Image.open('monegros.png')
 st.image(image, width=800)
 
 st.title('Desertificación en Aragón')
