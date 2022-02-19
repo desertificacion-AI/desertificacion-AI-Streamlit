@@ -1,2 +1,2 @@
-scikit-image=0.18.3
+scikit-image==0.18.3
 streamlit==1.5.1
