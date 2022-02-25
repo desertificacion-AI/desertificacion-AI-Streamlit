@@ -2,7 +2,7 @@
 
 ## AI Saturdays - I Edición Zaragoza - CURSO BÁSICO DE IA
 
-Streamlit app
+### Streamlit app
 
 Enlace para lanzar la aplicación:
 
