@@ -139,15 +139,13 @@ if coord_y + ancho > y1:
 else:
     yn = coord_y + ancho
 
-# TODO se produce un error en los límites
-
-st.sidebar.write('x0', coord_x)
-st.sidebar.write('y0', coord_y)
-st.sidebar.write('xn', xn)
-st.sidebar.write('yn', yn)
-st.sidebar.write('ancho', ancho)
-st.sidebar.write('x1', x1)
-st.sidebar.write('y1', y1)
+# st.sidebar.write('x0', coord_x)
+# st.sidebar.write('y0', coord_y)
+# st.sidebar.write('xn', xn)
+# st.sidebar.write('yn', yn)
+# st.sidebar.write('ancho', ancho)
+# st.sidebar.write('x1', x1)
+# st.sidebar.write('y1', y1)
 
 # Cuadrículas
 # ===========
