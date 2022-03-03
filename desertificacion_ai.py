@@ -33,8 +33,8 @@ with st.expander('Librerías'):
         * streamlit
     """)
 
-# ¿Mostrar imágenes satelitales?
-# ==============================
+# Mostrar imágenes satelitales
+# ============================
 
 # Sidebar
 # -------
