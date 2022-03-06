@@ -120,12 +120,12 @@ x1 = min(img1.shape[1], img2.shape[1], img3.shape[1], img4.shape[1], img5.shape[
 y0 = 0
 y1 = min(img1.shape[0], img2.shape[0], img3.shape[0], img4.shape[0], img5.shape[0], img6.shape[0])
 
-coord_x = st.sidebar.slider('Coordenada x.0', x0, x1, value=5)
-coord_y = st.sidebar.slider('Coordenada y.0', y0, y1, value=5)
+coord_x = st.sidebar.slider('Coordenada x.0', x0, x1)
+coord_y = st.sidebar.slider('Coordenada y.0', y0, y1)
 
 a0 = 1
 a1 = 250
-ancho = st.sidebar.slider('Ancho/Alto de la cuadrícula', a0, a1)
+ancho = st.sidebar.slider('Ancho/Alto de la cuadrícula', a0, a1, value=5)
 
 if coord_x + ancho > x1:
     coord_x = x1 - ancho
