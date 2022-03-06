@@ -17,12 +17,6 @@ st.set_page_config(
     layout='centered'
 )
 
-# Se emplean las 6 imágenes del repositorio.
-# Para entrenar al sistema se empleará una parte de las imágenes 1 a 5..
-# La imagen 6 será la imagen text.
-# La cuadrícula de la imagen 6 se comparará con la cuadrícula de la imagen predicha.
-# Para hacer un estudio con otras imágenes modificar el código en consecuancia con las nuevas imágenes.
-
 # Título
 # ======
 
