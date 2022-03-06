@@ -1,5 +1,5 @@
 matplotlib==3.5.1
 rasterio==1.2.10
 scikit-image==0.19.2
-cikit-learn==1.0.2
+scikit-learn==1.0.2
 streamlit==1.5.1
