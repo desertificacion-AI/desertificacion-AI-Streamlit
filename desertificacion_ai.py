@@ -25,7 +25,6 @@ st.image(image, width=700)
 
 st.title('Desertificación en Aragón')
 st.subheader('AI Saturdays - I Edición Zaragoza - CURSO BÁSICO DE IA')
-st.markdown('*Añadir enlace a artículo **Medium***')
 
 # Librerías
 # =========
