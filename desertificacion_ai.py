@@ -158,13 +158,13 @@ y0 = coord_y
 st.markdown(f'Coordenadas de la esquina superior izquierda: &emsp; $x_0$ * $y_0$ = {x0} * {y0} px')
 st.markdown(f'Coordenadas de la esquina superior derecha: &emsp; $x_n$ * $y_n$ = {xn} * {yn} px')
 
-cuadrícula1 = img1[y0:yn, x0:xn]
-cuadrícula2 = img2[y0:yn, x0:xn]
-cuadrícula3 = img3[y0:yn, x0:xn]
-cuadrícula4 = img4[y0:yn, x0:xn]
-cuadrícula5 = img5[y0:yn, x0:xn]
-cuadrícula6 = img6[y0:yn, x0:xn]
-cuadriculas = (cuadrícula1, cuadrícula2, cuadrícula3, cuadrícula4, cuadrícula5, cuadrícula6)
+cuadricula1 = img1[y0:yn, x0:xn]
+cuadricula2 = img2[y0:yn, x0:xn]
+cuadricula3 = img3[y0:yn, x0:xn]
+cuadricula4 = img4[y0:yn, x0:xn]
+cuadricula5 = img5[y0:yn, x0:xn]
+cuadricula6 = img6[y0:yn, x0:xn]
+cuadriculas = (cuadricula1, cuadricula2, cuadricula3, cuadricula4, cuadricula5, cuadricula6)
 
 def zona_ndvi(ndvi):
     """Zona de representación según el rango."""
@@ -310,6 +310,11 @@ anp=np.reshape(anp, (ik - i0, jk - j0))
 org=np.array(tfreal)
 org=np.reshape(org, (ik - i0, jk - j0))
 
+st.markdown(f'Coordenadas de la esquina superior izquierda: &emsp; $i_0$ * $j_0$ = {i0} * {j0} px')
+st.markdown(f'Coordenadas de la esquina superior derecha: &emsp; $i_n$ * $j_n$ = {ik} * {jk} px')
+
+st.markdown(f'##### Error cuadrático promedio: &emsp; {mse:.5f}')
+
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
 ax1.imshow(org.astype(np.float64), interpolation='nearest')
 ax2.imshow(anp.astype(np.float64), interpolation='nearest')
@@ -317,10 +322,20 @@ ax1.set_title('Imagen original')
 ax2.set_title('Imagen predicha por la IA')
 st.pyplot(fig)
 
-st.markdown(f'Coordenadas de la esquina superior izquierda: &emsp; $i_0$ * $j_0$ = {i0} * {j0} px')
-st.markdown(f'Coordenadas de la esquina superior derecha: &emsp; $i_n$ * $j_n$ = {ik} * {jk} px')
+np_data_6 = np.asarray(cuadricula6)
 
-st.markdown(f'##### Error cuadrático promedio: &emsp; {mse:.5f}')
+np_data_mean_6 = np_data_6.mean()
+np_data_mean_anp = anp.mean()
+
+st.markdown(f'##### Valor promedio NDVI del conjunto de píxeles:')
+st.markdown(f'##### Imagen original: &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;{np_data_mean_6:.3f}')
+st.markdown(f'##### Cuadrícula predicha por la IA: &emsp; {np_data_mean_anp:.3f}')
+
+zona_6 = zona_ndvi(np_data_mean_6)
+zona_anp = zona_ndvi(np_data_mean_anp)
+st.markdown(f'##### Interpretación del valor promedio NDVI:')
+st.markdown(f'##### Imagen original: &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; → &ensp; {zona_6}')
+st.markdown(f'##### Cuadrícula predicha por la IA: &emsp; → &ensp; {zona_anp}')
 
 # Créditos
 # ========
